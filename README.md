@@ -1,5 +1,12 @@
-# portal_noticias
-learning nodejs
+# Portal de Notícias
+
+_Projeto de desenvolvimento pessoal para com NodeJS_
+
+# Recursos
+
+* NodeJS
+* MySQL
+* HTML
+* Git
 
 
-<h1>A NÃOOOOOOOOO</h1>
