@@ -1,9 +1,9 @@
-let express = require('express')()
+let express = require('./config/server.js')
 
-express.get('/', (req, res) => {
-    res.send ('uhu')
-})
+var rota_noticias = require('./app/routes/noticias')(express)
+var rota_home = require('./app/routes/home')(express)
+var rota_formulario_inclusao_noticia = require('./app/routes/formulario_inclusao_noticia')(express)
 
 express.listen(4242, () => {
-    console.log(`On-deline`)
+    console.log(`Server OndeLine 4242`)
 })
