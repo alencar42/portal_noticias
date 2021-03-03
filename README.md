@@ -7,6 +7,6 @@ _Projeto de desenvolvimento pessoal para com NodeJS_
 * NodeJS
 * MySQL
 * HTML
-* Git
+* Git com github
 
 
