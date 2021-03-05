@@ -1,6 +1,6 @@
 module.exports = (express) => {
 
-    express.get('/noticias', async (req, res) => {
+    express.get('/noticias', (req, res) => {
 
 
         let mysql = require('mysql')
@@ -14,7 +14,7 @@ module.exports = (express) => {
             }
         )
 
-        await connection.query('select * from noticias;', (erro, result) => {
+        connection.query('select * from noticias;', (erro, result) => {
             res.render("noticias/noticias", {noticias : result})
         })
             //res.render (`noticias/noticias`)
