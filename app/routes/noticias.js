@@ -14,10 +14,10 @@ module.exports = (express) => {
             }
         )
 
-        await connection.query('select * from noticias;', (err, result) => {
-            res.send(result)
+        await connection.query('select * from noticias;', (erro, result) => {
+            res.render("noticias/noticias", {noticias : result})
         })
             //res.render (`noticias/noticias`)
-        })
+    })
 
 }
